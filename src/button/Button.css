@@ -1,0 +1,24 @@
+.button {
+  background: darkgreen;
+  cursor: pointer;
+  color: #fff;
+  padding: 15px 25px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin: 20px 10px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  letter-spacing: 0.2px;
+  /* font-family: 'Nunito'; */
+
+}
+
+
+
+.button:hover {
+  background: #493072;
+  color: lightgrey;
+}

@@ -1,0 +1,66 @@
+.panel,
+.amount,
+.search-engine {
+  display: flex;
+}
+
+.panel {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: #302C5D;
+  color: #fff;
+
+}
+
+
+.search-engine {
+  align-items: center;
+  justify-content: center;
+}
+
+
+.search-engine input {
+ height: 40px;
+ outline: none;
+ padding: 0 5px;
+ color: #302C5D;
+ font-size: 18px;
+ /* border-radius: 20px; */
+}
+
+.search-engine input::placeholder {
+  font-size: 14px;
+  color: grey;
+  font-weight: 400;
+}
+
+
+.toggler {
+  display: flex;
+  color: lightgrey;
+  width: 150px;
+  padding: 5px;
+  cursor: pointer;
+  background: #493072;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.toggler:hover {
+  background-color: darkgreen;
+  /* color: #fff; */
+}
+
+.toggler img {
+  margin-right: 10px;
+}
+
+.toggler div {
+  display: flex;
+  align-items: center;
+}
+
