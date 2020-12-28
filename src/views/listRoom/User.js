@@ -8,16 +8,16 @@ import './List.css'
 const User = ({ avatar, name, type }) => {
 
   return (
-    <div className="flex align_center">
-      <div className="avatar_div cell flex align__center">
-        <img className="avatar" src={avatar} alt={name} />
+    <div className="flex align-center">
+      <div className="cell avatar-cell flex align-center">
+        <img className="avatar-img" src={avatar} alt={name} />
       </div>
-      <div className="name cell flex align__center">RealNames here</div>
-      {/* <RealName classname="name cell flex align__center" userName={name} /> */}
+      {/* <div className="name cell flex align__center">RealNames here</div> */}
+      <RealName userName={name} />
 
-      <div className="type cell flex align__center">{type}</div>
+      <div className="cell type-cell flex align-center">{type}</div>
 
-      <ReposNames userName={name} className="repos cell flex" />
+      <ReposNames userName={name} />
     </div>
   )
 }

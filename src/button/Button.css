@@ -22,3 +22,14 @@
   background: #493072;
   color: lightgrey;
 }
+
+
+@media only screen and (max-width: 375px) {
+  .button {
+    height: 35px;
+    margin: 10px 5px;
+    padding: 15px;
+    font-weight: normal;
+  }
+
+}

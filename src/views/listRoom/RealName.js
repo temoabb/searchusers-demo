@@ -2,24 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-const RealName = ({ userName, classname }) => {
+import './List.css'
+
+const RealName = ({ userName }) => {
   const [realName, setRealName] = useState("")
-  // const [reposNames, setReposNames] = useState([])
-
-
-  // const getNameAndRepos = () => {
-  //   const nameData = axios.get(`https://api.github.com/users/${userName}`)
-  //   const reposData = axios.get(`https://api.github.com/users/${userName}/repos`)
-
-  //   axios.all([nameData, reposData])
-  //     .then(axios.spread((...allData) => {
-  //       const userRealName = nameData.data.name
-  //       const userReposNames = [reposData.data[0]['name'], reposData.data[1]['name']. reposData.data[2]['name']]
-
-  //       setRealName(userRealName)
-  //       setReposNames(userReposNames)
-  //     }))
-  // }
 
   const getName = () => {
     axios
@@ -34,7 +20,7 @@ const RealName = ({ userName, classname }) => {
   useEffect(getName, [])
 
   return (
-    <div className={classname}>
+    <div classname="cell name-cell flex align-center">
       <Link to={`/domain/${userName}`}>{realName}</Link>
     </div>
   )

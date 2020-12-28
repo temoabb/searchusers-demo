@@ -64,3 +64,26 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 375px) {
+  .panel {
+    flex-direction: column;
+  }
+  .toggler {
+    display: none;
+  }
+  .search-engine form {
+    /* width: 40%; */
+    border: 1px solid darkgreen;
+    width: 150px;
+  }
+
+  .panel {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .search-engine input {
+    width: 100%;
+    height: 35px;
+  }
+}

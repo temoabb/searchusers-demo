@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-// import { Link } from 'react-router-dom'
-
 import ActionsPanel from './actionsPanel/ActionsPanel'
 import ListRoom from './listRoom/ListRoom'
-import Grid from './gridRoom/Grid'
+import Grid from './gridRoom/GridRoom'
 
 import gridOn from '../assets/grid_on.svg'
 import gridOff from '../assets/grid_off.svg'
@@ -30,8 +28,6 @@ const List = () => {
   const toggleHandler = () => {
     setListView(!listView)
   }
-
-
 
   return (
     <div>

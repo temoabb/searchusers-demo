@@ -2,11 +2,11 @@
   display: flex;
 }
 
-.align__center {
+.align-center {
   align-items: center;
 }
 
-.justify__center {
+.justify-center {
   justify-content: center;
 }
 
@@ -35,11 +35,11 @@
   background:#16b93a;
   color: #f4f4f2;
   padding: 12px 0;
-  border-left: 1px solid #fff;
+  /* border-left: 1px solid #fff; */
 }
 
 
-.flat-cell {
+.flat div {
   width: 25%;
   display: flex;
   padding-left: 10px;
@@ -50,8 +50,13 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+.repos p {
+  padding: 5px 5px 5px 0;
+  font-weight: 400;
+  color: seagreen;
+}
 
-.avatar {
+.avatar-img {
   width: 50px;
   height: 50px;
 }
@@ -61,13 +66,14 @@
   border-left:  1px solid #fff;
   border-right:  1px solid gainsboro;
   border-bottom:  1px solid gainsboro;
+  padding-left: 10px;
 }
 
-.avatar__div,
-.name,
-.type,
-.repos {
-  padding-left: 10px;
+.avatar-cell,
+.name-cell,
+.type-cell,
+.repos-cell {
+  
 }
 
 .name a {
@@ -80,3 +86,14 @@
 }
 
 
+ @media only screen and (max-width: 375px) {
+  .flat {
+    font-size: 12px;
+    padding: 10px 10px 10px 0;
+  }
+
+  .amount {
+    padding: 10px 0 0;
+    font-size: 20px;
+  }
+}
