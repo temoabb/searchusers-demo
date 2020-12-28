@@ -12,13 +12,8 @@ const User = ({ avatar, name, type }) => {
       <div className="avatar_div cell flex align__center">
         <img className="avatar" src={avatar} alt={name} />
       </div>
-
-      <RealName classname="name cell flex align__center" userName={name} />
-      {/* name component here */}
-      {/* <div className="name cell flex align__center">
-        <Link to={`/domain/${name}`}>{name}</Link>
-      </div> */}
-      {/* ======================================= */}
+      <div className="name cell flex align__center">RealNames here</div>
+      {/* <RealName classname="name cell flex align__center" userName={name} /> */}
 
       <div className="type cell flex align__center">{type}</div>
 

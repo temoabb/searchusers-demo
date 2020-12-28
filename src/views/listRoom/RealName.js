@@ -26,8 +26,8 @@ const RealName = ({ userName, classname }) => {
       .get(`https://api.github.com/users/${userName}`)
       .then(response => {
         setRealName(response.data.name)
-        console.log("response.data.name", response.data.name)
-        console.log("realname", realName)
+        // console.log("response.data.name", response.data.name)
+        // console.log("realname", realName)
       })
   }
 

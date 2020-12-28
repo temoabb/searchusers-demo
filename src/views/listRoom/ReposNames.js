@@ -8,10 +8,12 @@ const ReposNames = ({ userName, className }) => {
   useEffect(() => {
     axios.get(`https://api.github.com/users/${userName}/repos`)
       .then(response => {
-        let newArr = []
-        response.data[0] ? newArr.concat(response.data[0]['name']) : newArr.concat(' ')
-        response.data[1] ? newArr.concat(response.data[1]['name']) : newArr.concat(' ')
-        response.data[2] ? newArr.concat(response.data[2]['name']) : newArr.concat(' ')
+        let newArr;
+        response.data[0] !== undefined
+          ? newArr = [response.data[0]['name'], response.data[1]['name'], response.data[2]['name']]
+          : newArr = ['No Info', 'No Info', 'No Info']
+        console.log('response>', response)
+        console.log('newArr', newArr)
         setReposNames(newArr)
       })
   }, [])
