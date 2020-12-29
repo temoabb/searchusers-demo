@@ -9,7 +9,7 @@ const Listroom = ({ data, amount, repos }) => {
         <div className="flat-first">AVATAR</div>
         <div className="flat-second">NAME</div>
         <div className="flat-third">TYPE</div>
-        <div className="flat-fourth"> FIRST 3 REPOS</div>
+        <div className="flat-fourth">FIRST 3 REPOS</div>
       </div>
       {data.map(item => <User
         key={item.id}

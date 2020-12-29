@@ -8,12 +8,11 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 40px 10px 10px;
   background: #302C5D;
   color: #fff;
 
 }
-
 
 .search-engine {
   align-items: center;
@@ -63,6 +62,11 @@
   display: flex;
   align-items: center;
 }
+
+
+
+
+/* ================ RESPONSIVE ================== */
 
 @media only screen and (max-width: 375px) {
   .panel {

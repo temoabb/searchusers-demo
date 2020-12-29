@@ -14,7 +14,8 @@
 .listroom {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 80%; */
+  margin: 0 auto;
 }
 
 .amount {
@@ -28,16 +29,13 @@
 }
 
 
-
 .flat {
   width: 100%;
   display: flex;
   background:#16b93a;
   color: #f4f4f2;
   padding: 12px 0;
-  /* border-left: 1px solid #fff; */
 }
-
 
 .flat div {
   width: 25%;
@@ -45,45 +43,52 @@
   padding-left: 10px;
 }
 
-.repos {
+.info-row {
+  display: flex;
+}
+
+.repos-cell {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.repos p {
+
+.repos-cell p {
   padding: 5px 5px 5px 0;
   font-weight: 400;
   color: seagreen;
 }
 
+
 .avatar-img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
 .cell {
   width: 25%;
-  border-left:  1px solid #fff;
+  /* border-left:  1px solid #fff; */
   border-right:  1px solid gainsboro;
   border-bottom:  1px solid gainsboro;
-  padding-left: 10px;
 }
 
-.avatar-cell,
 .name-cell,
 .type-cell,
 .repos-cell {
-  
+  padding-left: 10px;
 }
 
-.name a {
+
+.name-cell a {
   text-decoration: none;
   color:  rgb(109, 88, 88);
 }
 
-.name a:hover {
+.name-cell a:hover {
   color: rgb(39, 25, 25);
 }
+
+
 
 
  @media only screen and (max-width: 375px) {
@@ -96,4 +101,33 @@
     padding: 10px 0 0;
     font-size: 20px;
   }
+
+  
+  .name-cell,
+  .type-cell {
+    width: 20%;
+    font-size: 10px;
+  }
+
+  .avatar-cell {
+    width: 10%;
+
+  }
+
+  .repos-cell {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .avatar-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .name-cell,
+  .type-cell,
+  .repos-cell {
+     padding-left:2px;
+  }
+
 }

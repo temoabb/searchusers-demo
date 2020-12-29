@@ -8,20 +8,27 @@ import './List.css'
 const User = ({ avatar, name, type }) => {
 
   return (
-    <div className="flex align-center">
+    <div className="info-row">
+
+      {/* avatar */}
       <div className="cell avatar-cell flex align-center">
         <img className="avatar-img" src={avatar} alt={name} />
+
       </div>
-      {/* <div className="name cell flex align__center">RealNames here</div> */}
+      {/* name */}
       <RealName userName={name} />
 
-      <div className="cell type-cell flex align-center">{type}</div>
+      {/* type */}
+      <div className="type-cell cell flex align-center">{type}</div>
 
+      {/* repos */}
       <ReposNames userName={name} />
     </div>
   )
 }
 
-
-
 export default User
+
+
+{/* <div className="name-cell cell flex align-center">RealNames here</div> */ }
+{/* <div className="repos-cell cell flex align-center">ReposNames here</div> */ }
