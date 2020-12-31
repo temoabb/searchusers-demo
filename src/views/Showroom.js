@@ -77,7 +77,7 @@ const Showroom = () => {
             onClick={handleStateChecker}
           />
       }
-      {/* <div>
+      <div>
         <UsersDisplay
           data={data}
           roomstyle={roomstyle}
@@ -85,7 +85,7 @@ const Showroom = () => {
           formation={formation}
           amount={data.length}
         />
-      </div> */}
+      </div>
     </div>
   )
 }
