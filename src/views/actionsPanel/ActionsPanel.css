@@ -8,12 +8,15 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px 10px 10px;
+  padding: 10px 60px;
   background: #302C5D;
   color: #fff;
-
+  border-bottom: 1px solid #493072;
 }
 
+.amount {
+  color: rgb(172, 223, 172);
+}
 .search-engine {
   align-items: center;
   justify-content: center;
@@ -25,8 +28,9 @@
  outline: none;
  padding: 0 5px;
  color: #302C5D;
- font-size: 18px;
- /* border-radius: 20px; */
+ font-size: 15px;
+ border: none;
+ border-radius: 3px;
 }
 
 .search-engine input::placeholder {
@@ -51,7 +55,6 @@
 
 .toggler:hover {
   background-color: darkgreen;
-  /* color: #fff; */
 }
 
 .toggler img {

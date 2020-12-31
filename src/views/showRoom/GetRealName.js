@@ -18,7 +18,7 @@ const RealName = ({ userName }) => {
   useEffect(getName, [])
 
   return (
-    <div className="cell name-cell flex align-center">
+    <div className="name-cell">
       <Link to={`/domain/${userName}`}>{realName}</Link>
     </div>
   )

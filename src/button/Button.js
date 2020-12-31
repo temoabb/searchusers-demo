@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import './Button.css'
 
 
-const Button = ({ text, address, isDisabled }) => {
+const Button = ({ text, address, isDisabled, onClick }) => {
   return (
     <Link to={address}>
-      <button disabled={isDisabled} className="button">
+      <button onClick={onClick} disabled={isDisabled} className="button">
         {text}
       </button>
     </Link>

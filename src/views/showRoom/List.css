@@ -1,0 +1,221 @@
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.amount {
+  padding: 10px 0 10px 5px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.amount p {
+  padding-left: 10px;
+}
+
+
+.flat {
+  width: 100%;
+  display: flex;
+  background:#16b93a;
+  color: #f4f4f2;
+  padding: 12px 0;
+}
+
+.flat div {
+  width: 25%;
+  display: flex;
+  padding-left: 10px;
+}
+
+.flat-first,
+.flat-second,
+.flat-third {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flat-fourth {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hideflat {
+  display: none;
+}
+
+
+/* ======================== userinfo when we're in LIST MODE: ================================================== */
+ 
+.listroom {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+.inforow {
+  display: flex;
+}
+
+.inforow div {
+  width: 25%;
+  /* border-right:  1px solid gainsboro; */
+  border-bottom:  1px solid gainsboro;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inforow .avatar-cell img {
+  width: 60px;
+  height: 60px;
+}
+
+.inforow .name-cell a {
+  text-decoration: none;
+  color:  rgb(136, 114, 114);
+}
+
+.inforow .name-cell a:hover {
+  color: #16b93a;
+  /* border-bottom: 1px solid  #16b93a; */
+}
+
+.inforow .repo-cell {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.inforow .repo-cell p {
+  padding: 5px 5px 5px 0;
+  font-weight: 400;
+  color: seagreen;
+}
+
+
+
+/* ======================== userinfo when we're in >>>>> GRID <<<<<< mode: ================================================== */
+
+.gridroom {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background: #302C5D;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+
+.infocard {
+  width: 220px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #493072;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.infocard:hover {
+  background: #493072;
+ 
+}
+
+.infocard div {
+  width: 100%;
+}
+
+.infocard .avatar-cell img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.infocard .name-cell a {
+  text-decoration: none;
+  color:  rgb(136, 114, 114);
+}
+
+.infocard .name-cell a:hover {
+  color:  rgb(177, 162, 162);
+  border-bottom: 1px solid  rgb(148, 125, 125);
+}
+
+.infocard .repo-cell {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.infocard .type-cell {
+  color: rgb(72, 182, 72);
+  font-weight: 400;
+}
+
+.infocard .repo-cell p {
+  padding: 2px;
+  font-weight: 400;
+  color: gray;
+  font-size: 12.5px;
+}
+
+
+
+
+ @media only screen and (max-width: 375px) {
+  .flat {
+    font-size: 12px;
+    padding: 10px 10px 10px 0;
+  }
+
+  .amount {
+    padding: 10px 0 0;
+    font-size: 20px;
+  }
+
+  
+  .name-cell,
+  .type-cell {
+    width: 20%;
+    font-size: 10px;
+  }
+
+  .avatar-cell {
+    width: 10%;
+
+  }
+
+  .repos-cell {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .avatar-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .name-cell,
+  .type-cell,
+  .repos-cell {
+     padding-left:2px;
+  }
+
+}

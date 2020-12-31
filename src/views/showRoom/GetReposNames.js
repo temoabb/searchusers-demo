@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import './List.css'
 
-const ReposNames = ({ userName }) => {
+const GetReposNames = ({ userName }) => {
 
   const [reposNames, setReposNames] = useState([])
 
@@ -23,7 +23,7 @@ const ReposNames = ({ userName }) => {
   }, [])
 
   return (
-    <div className='repos-cell cell flex'>
+    <div className='repo-cell'>
       <p>{reposNames[0]}</p>
       <p>{reposNames[1]}</p>
       <p>{reposNames[2]}</p>
@@ -33,4 +33,4 @@ const ReposNames = ({ userName }) => {
 
 
 
-export default ReposNames
+export default GetReposNames

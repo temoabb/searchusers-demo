@@ -4,20 +4,20 @@ import logo from '../../assets/group-users.svg'
 
 import './ActionsPanel.css'
 
-const ActionsPanel = ({ amount, searched, isDisabled, nextCondition, exteriorIcon, toggleHandler }) => {
+const ActionsPanel = ({ amount, searched, isDisabled, nextCondition, exteriorIcon, toggleHandler, handleInputValueChange, onClick }) => {
   return (
     <div className="panel">
 
       <div className="amount">
         <img src={logo} alt="users-group" />
-        <p>{amount} USERS </p>
+        <p>{amount} most active GitHub users </p>
       </div>
 
       <div className="search-engine">
         <form>
-          <input type="text" placeholder="Type username..." />
+          <input value={searched} onChange={handleInputValueChange} type="text" placeholder="Type username..." />
         </form>
-        <Button isDisabled={isDisabled} address={`domain/${searched}`} text="SEARCH" />
+        <Button onClick={onClick} isDisabled={isDisabled} address={`domain/${searched}`} text="SEARCH" />
       </div>
 
       <div className="toggler" onClick={toggleHandler}>
