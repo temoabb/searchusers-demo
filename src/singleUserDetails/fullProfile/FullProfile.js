@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Main from './Main'
+import WorkInfo from './WorkInfo'
 
 import './FullProfile.css'
+
+const details = []
 
 const FullProfile = ({ className, login, avatar_url, type, name, location, twitter_username, public_repos, followers }) => {
 
@@ -10,29 +14,20 @@ const FullProfile = ({ className, login, avatar_url, type, name, location, twitt
   return (
     <div className={className}>
       <h1 className="noUser">USER NOT FOUND!</h1>
-      <div className="main">
-        <div className="avatarDiv">
-          <img src={avatar_url} alt="avatar" />
-        </div>
-        <div className="personal">
-          <a href={userGitHubURL} target="_blank" >{name}</a>
-          <p>Type: {type}</p>
-          <p>Location: {location} </p>
-          <p>Twitter username: {twitter_username}</p>
-        </div>
-      </div>
-      <div className="workInfo">
-        <p>REPOS</p>
-        <p>COMPANY</p>
-        <p>Public repos: {public_repos}</p>
-        <p>Followers: {followers} </p>
-      </div>
-      <Link to="/domain"><h2>BACK TO MOST ACTIVE USERS</h2></Link>
+      <Main
+        avatar_url={avatar_url}
+        userGitHubURL={userGitHubURL}
+        name={name}
+        location={location}
+        twitter_username={twitter_username}
+        type={type} />
+      <WorkInfo
+        public_repos={public_repos}
+        login={login}
+        followers={followers} />
+      <h3 className="backToUsers" style={{ margin: '20px' }}><Link to="/domain">GO BACK</Link></h3>
     </div>
   )
 }
-
-
-
 
 export default FullProfile

@@ -1,16 +1,61 @@
+.waiting {
+  color: #fff;  
+}
+
+.figuresContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:  #493072;
+}
+
+
 .gotData {
   width: 60%;
   display: flex;
   flex-direction: column;
-  border: 1px solid salmon;
+  padding: 10px 0;
+  color: lightyellow; 
 }
+
+
+.main,
+.workInfo {
+  background: #302C5D;
+}
+
 
 .gotData .noUser {
   display: none;
 }
 
+.gotData > h1 {
+  margin: 20px;
+}
+
+
 .noData > div {
   display: none;
+}
+
+.noData {
+  border-radius: 5px;
+  background: brown;
+  padding: 20px;
+}
+
+.noData .noUser {
+  margin: 20px;
+  color: #fff;
+}
+
+.noData .backToUsers a {
+  color: lightgrey;
+}
+
+.noData .backToUsers a:hover {
+  color: #fff;
 }
 
 .main {
@@ -18,37 +63,143 @@
   height: 200px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid salmon;
+  justify-content: flex-start;
+  border-bottom: 1px solid #493072;
+  font-weight: 300;
+  font-size: 18px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
 .avatarDiv {
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* width: 20%; */
   height: 100%;
+  padding: 5px 10px;
 }
 
 .avatarDiv img {
-  width: 100px;
-  height: 100px;
+  max-width: 130px;
+  height: auto;
+  border-radius: 3px;
 }
 
 
 .personal {
-  width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 100%;
   align-items: flex-start;
 }
 
+.personal a {
+  height: 30px;
+  color: lightgreen;
+  font-size: 22px;
+  font-weight: bolder;
+  /* border-bottom: 1px solid lightgreen; */
+}
+.personal a:hover {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.personal p {
+  padding: 5px 0;
+  font-size: 15px;
+}
 
 .workInfo {
   width: 100%;
-  /* height: 500px; */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
+  color: rgb(178, 216, 178);
+}
+
+.workInfo > div {
+  width: 100%;
+  display: flex;
 }
 
 
+.specifics {
+  width: 50%;
+  border-right: 1px solid #493072;
+  border-bottom: 1px solid #493072;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: lightgreen;
+  font-size: 20px;
+  /* letter-spacing: 0.5px; */
+  font-weight: 300;
+
+}
+
+.findings {
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  border-bottom: 1px solid #493072;
+}
+
+
+/* ======================= REPOS ====================== */
+.repo-cell {
+  display: flex;
+  width: 50%;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 15px;
+  color: lightgray;
+  border-bottom: 1px solid #493072;
+}
+
+.repo-cell p {
+  padding: 3px 0;
+}
+
+
+/* ====================== ORGANIZATION ===================== */
+.organization-cell {
+  display: flex;
+  align-items: center;
+}
+
+.organization {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.organization img {
+  max-width: 50px;
+  height: auto;
+}
+
+.organization a {
+  color: lightgreen;
+  font-size: 20px;
+  margin: 0 10px;
+  height: 30px;
+}
+.organization a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+
+/* ====================== Back to most active users room ==================== */
+.backToUsers a {
+  color: lightgreen;
+  border-bottom: 1px solid lightgreen;
+}
+
+.backToUsers a:hover {
+  color: #fff;
+}

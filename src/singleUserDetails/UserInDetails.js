@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import FullProfile from './fullProfile/FullProfile'
+import './fullProfile/FullProfile.css'
 
 
 
@@ -21,10 +22,13 @@ const UserInDetails = ({ match }) => {
       .catch(error => {
         setLoading(false)
       })
-  }, [])
+  }, [match])
+
+
   return (
-    <div>
-      {loading && <div>Wait.. we're searching..</div>}
+    <div className="figuresContainer">
+      {loading && <div className="waiting"><h1>Wait.. we're searching...</h1></div>}
+
       {!loading && userData && <FullProfile
         className="gotData"
         login={userData.login}

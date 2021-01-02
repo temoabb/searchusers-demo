@@ -8,12 +8,10 @@ import gridOn from '../assets/grid_on.svg'
 import gridOff from '../assets/grid_off.svg'
 
 const Showroom = () => {
-
   const [data, setData] = useState([])
   const [roomstyle, setRoomStyle] = useState('listroom')
   const [showflat, setShowFlat] = useState('flat')
   const [formation, setFormation] = useState('inforow')
-
   const [value, setValue] = useState("")
   const [disableSearch, setDisableSearch] = useState(true)
 
@@ -22,7 +20,6 @@ const Showroom = () => {
     axios
       .get("https://api.github.com/users")
       .then(response => {
-        console.log("response", response)
         const gotData = response.data
         setData(gotData)
       })
@@ -38,7 +35,6 @@ const Showroom = () => {
       console.log('value exists', value)
       setDisableSearch(true)
       setValue("")
-      console.log('setvalue " " ', value)
     } else {
       console.log('value does not exist', value)
       setDisableSearch(true)
@@ -54,30 +50,30 @@ const Showroom = () => {
 
   return (
     <div>
-      {
-        roomstyle === 'listroom'
-          ? <ActionsPanel
-            searched={value}
-            handleInputValueChange={handleInputValueChange}
-            nextCondition="GRID"
-            toggleHandler={toggleHandler}
-            exteriorIcon={gridOn}
-            amount={data.length}
-            isDisabled={disableSearch}
-            onClick={handleStateChecker}
-          />
-          : <ActionsPanel
-            searched={value}
-            handleInputValueChange={handleInputValueChange}
-            nextCondition="LIST"
-            toggleHandler={toggleHandler}
-            exteriorIcon={gridOff}
-            amount={data.length}
-            isDisabled={disableSearch}
-            onClick={handleStateChecker}
-          />
-      }
-      <div>
+      {roomstyle === 'listroom' &&
+        <ActionsPanel
+          searched={value}
+          handleInputValueChange={handleInputValueChange}
+          nextCondition="GRID"
+          toggleHandler={toggleHandler}
+          exteriorIcon={gridOn}
+          amount={data.length}
+          isDisabled={disableSearch}
+          onClick={handleStateChecker}
+        />}
+
+      {roomstyle !== 'listroom' &&
+        <ActionsPanel
+          searched={value}
+          handleInputValueChange={handleInputValueChange}
+          nextCondition="LIST"
+          toggleHandler={toggleHandler}
+          exteriorIcon={gridOff}
+          amount={data.length}
+          isDisabled={disableSearch}
+          onClick={handleStateChecker}
+        />}
+      {/* <div>
         <UsersDisplay
           data={data}
           roomstyle={roomstyle}
@@ -85,7 +81,7 @@ const Showroom = () => {
           formation={formation}
           amount={data.length}
         />
-      </div>
+      </div> */}
     </div>
   )
 }

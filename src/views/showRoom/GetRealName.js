@@ -7,15 +7,14 @@ const RealName = ({ userName }) => {
 
   const [realName, setRealName] = useState("")
 
-  const getName = () => {
+  useEffect(() => {
     axios
       .get(`https://api.github.com/users/${userName}`)
       .then(response => {
         setRealName(response.data.name)
       })
-  }
+  }, [userName])
 
-  useEffect(getName, [])
 
   return (
     <div className="name-cell">
