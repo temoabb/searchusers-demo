@@ -12,10 +12,7 @@
   border-radius: 2px;
   font-weight: bold;
   letter-spacing: 0.2px;
-  /* font-family: 'Nunito'; */
-
 }
-
 
 
 .button:hover {
@@ -24,12 +21,23 @@
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 320px) {
   .button {
-    height: 35px;
+    height: 30px;
     margin: 10px 5px;
     padding: 15px;
-    font-weight: normal;
+    font-weight: 600;
+  }
+
+}
+
+
+@media only screen and (max-width: 414px) {
+  .button {
+    height: 30px;
+    margin: 10px 5px;
+    padding: 15px;
+    font-weight: 600;
   }
 
 }

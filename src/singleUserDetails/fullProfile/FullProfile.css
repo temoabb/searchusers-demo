@@ -148,7 +148,7 @@
 
 
 /* ======================= REPOS ====================== */
-.repo-cell {
+.workInfo .repo-cell {
   display: flex;
   width: 50%;
   align-items: flex-start;
@@ -159,7 +159,7 @@
   border-bottom: 1px solid #493072;
 }
 
-.repo-cell p {
+.workInfo .repo-cell p {
   padding: 3px 0;
 }
 

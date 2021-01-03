@@ -5,7 +5,7 @@ import WorkInfo from './WorkInfo'
 
 import './FullProfile.css'
 
-const details = []
+// const details = []
 
 const FullProfile = ({ className, login, avatar_url, type, name, location, twitter_username, public_repos, followers }) => {
 

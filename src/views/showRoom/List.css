@@ -89,7 +89,7 @@
 
 .inforow .name-cell a:hover {
   color: #16b93a;
-  /* border-bottom: 1px solid  #16b93a; */
+  border-bottom: 1px solid  #16b93a;
 }
 
 .inforow .repo-cell {
@@ -177,43 +177,262 @@
 }
 
 
- @media only screen and (max-width: 375px) {
+
+
+ /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>     RESPONSIVE       <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  */
+
+ @media only screen and (max-width: 414px) {
+  .amount {
+    padding: 10px 0 0;
+    font-size: 16px;
+  }
+
+  /* LIST */
+
+/* -------------- green flat ---------------- */
+
   .flat {
     font-size: 12px;
     padding: 10px 10px 10px 0;
   }
-
-  .amount {
-    padding: 10px 0 0;
-    font-size: 20px;
-  }
-
-  
-  .name-cell,
-  .type-cell {
+ 
+  .flat .flat-first {
     width: 20%;
-    font-size: 10px;
+    padding: 0;
   }
 
-  .avatar-cell {
-    width: 10%;
-
+  .flat .flat-second {
+    width: 20%;
+    padding: 0;
+    padding-left: 4px;
   }
 
-  .repos-cell {
-    width: 50%;
+  .flat .flat-third {
+    width: 20%;
+    padding: 0;
+    padding-left: 4px;
+  }
+
+  .flat .flat-fourth {
+    width: 40%;
+    padding-left: 3px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+/* ----------------------- inforow  ----------------------- */
+  .inforow div {
+    padding: 0;
+    /* font-family: 'Quicksand', sans-serif; */
+  }
+
+/* type  */
+  .inforow .type-cell {
+    width: 18%;
+    font-size: 11px;
+    color: gray;
+  }
+
+
+/* name */
+  .inforow .name-cell {
+    width: 20%;
+    font-size: 11px;
+  }
+
+
+/* avatar */
+  .inforow .avatar-cell {
+    width: 20%;
+    margin-right: 2px;
+    padding: 5px 0;
+  }
+  .inforow .avatar-cell .avatar-img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 2px;
+  }
+
+
+  /*  repos  */
+  .inforow .repo-cell {
+    width: 42%;
+    font-size: 12px;
+    align-items: center;
+    padding-top: 5px;
+  }
+  .inforow .repo-cell p {
+    padding: 3px 0;
+    font-weight: 400;
+    color: seagreen;
+    font-size: 8px;
+  }
+
+
+
+   /* GRID */
+
+  .gridroom {
+    padding: 5px;
+  }
+  
+  .infocard {
+    width: 150px;
+    height: 180px;
+    margin: 10px 3px;
+  }
+
+  .infocard .avatar-cell img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .infocard .type-cell {
     font-size: 12px;
   }
 
-  .avatar-img {
-    width: 100%;
-    height: auto;
+  .infocard .name-cell a {
+    text-decoration: none;
+    color:  rgb(136, 114, 114);
+    font-size: 12px;
+    border-bottom: 1px solid rgb(136, 114, 114);
+  }
+  
+  .infocard .repo-cell p {
+    font-weight: 400;
+    color: gray;
+    font-size: 8px;
   }
 
-  .name-cell,
-  .type-cell,
-  .repos-cell {
-     padding-left:2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .amount {
+    padding: 10px 0 0;
+    font-size: 16px;
+  }
+
+  /* LIST */
+
+/* -------------- green flat ---------------- */
+
+  .flat {
+    font-size: 12px;
+    padding: 10px 10px 10px 0;
+  }
+ 
+  .flat .flat-first {
+    width: 20%;
+    padding: 0;
+  }
+
+  .flat .flat-second {
+    width: 20%;
+    padding: 0;
+    padding-left: 4px;
+  }
+
+  .flat .flat-third {
+    width: 20%;
+    padding: 0;
+    padding-left: 4px;
+  }
+
+  .flat .flat-fourth {
+    width: 40%;
+    padding-left: 3px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+/* ----------------------- inforow  ----------------------- */
+  .inforow div {
+    padding: 0;
+    /* font-family: 'Quicksand', sans-serif; */
+  }
+
+/* type  */
+  .inforow .type-cell {
+    width: 18%;
+    font-size: 11px;
+    color: gray;
+  }
+
+
+/* name */
+  .inforow .name-cell {
+    width: 20%;
+    font-size: 11px;
+  }
+
+
+/* avatar */
+  .inforow .avatar-cell {
+    width: 20%;
+    margin-right: 2px;
+    padding: 5px 0;
+  }
+  .inforow .avatar-cell .avatar-img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 2px;
+  }
+
+
+  /*  repos  */
+  .inforow .repo-cell {
+    width: 42%;
+    font-size: 12px;
+    align-items: center;
+    padding-top: 5px;
+  }
+  .inforow .repo-cell p {
+    padding: 3px 0;
+    font-weight: 400;
+    color: seagreen;
+    font-size: 8px;
+  }
+
+
+
+   /* GRID */
+
+  .gridroom {
+    padding: 5px;
+  }
+  
+  .infocard {
+    width: 150px;
+    height: 180px;
+    margin: 10px 3px;
+  }
+
+  .infocard .avatar-cell img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .infocard .type-cell {
+    font-size: 12px;
+  }
+
+  .infocard .name-cell a {
+    text-decoration: none;
+    color:  rgb(136, 114, 114);
+    font-size: 12px;
+    border-bottom: 1px solid rgb(136, 114, 114);
+  }
+  
+  .infocard .repo-cell p {
+    font-weight: 400;
+    color: gray;
+    font-size: 8px;
   }
 
 }

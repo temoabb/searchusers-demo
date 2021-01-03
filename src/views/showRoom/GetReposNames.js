@@ -11,7 +11,7 @@ const GetReposNames = ({ userName }) => {
     axios.get(`https://api.github.com/users/${userName}/repos`)
       .then(response => {
         let newArr = [];
-        console.log(response.data)
+        // console.log(response.data)
         if (response.data.length) {
           response.data[0]['name'] ? newArr.push(response.data[0]['name']) : newArr.push('-')
           response.data[1] !== undefined && response.data[1]['name'] ? newArr.push(response.data[1]['name']) : newArr.push('-')
