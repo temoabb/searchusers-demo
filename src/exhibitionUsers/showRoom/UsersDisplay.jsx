@@ -1,6 +1,6 @@
 import React from 'react'
-import UserShortInfo from './UserShortInfo'
-import GreenFlat from './GreenFlat'
+import UserShortInfo from './UserShortInfo.jsx'
+import GreenFlat from './GreenFlat.jsx'
 import './PigmentUsers.css'
 
 const UsersDisplay = ({ roomstyle, showflat, data, formation }) => {

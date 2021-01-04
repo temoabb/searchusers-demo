@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import UpperTier from './UpperTier'
-import WorkInfo from './WorkInfo'
+import UpperTier from './UpperTier.jsx'
+import WorkInfo from './WorkInfo.jsx'
 
 import './FullProfile.css'
 

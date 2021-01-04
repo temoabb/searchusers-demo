@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-
-import FullProfile from './fullProfile/FullProfile'
+import FullProfile from './fullProfile/FullProfile.jsx'
 import './fullProfile/FullProfile.css'
 
 
-
-const UserInDetails = ({ match }) => {
+const SingleUserDetails = ({ match }) => {
   const [userData, setData] = useState(false)
   const [loading, setLoading] = useState(true)
 
@@ -48,4 +46,4 @@ const UserInDetails = ({ match }) => {
 
 
 
-export default UserInDetails
+export default SingleUserDetails

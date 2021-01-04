@@ -61,16 +61,11 @@
   background-color: darkgreen;
 }
 
-.toggler img {
-  margin-right: 10px;
-}
 
 .toggler div {
   display: flex;
   align-items: center;
 }
-
-
 
 
 /* ================ RESPONSIVE ================== */
@@ -94,10 +89,6 @@
   .toggler div {
     padding: 8px 0;
     font-size: 16px;
-  }
-
-  .toggler img {
-    display: none;
   }
 
   .search-engine form {
@@ -145,10 +136,6 @@
     font-size: 16px;
   }
 
-  .toggler img {
-    display: none;
-  }
-
   .search-engine {
     margin-bottom: 10px;
   }
@@ -194,10 +181,6 @@
     padding: 8px 0;
     font-size: 14px;
     letter-spacing: 0.8px;
-  }
-
-  .toggler img {
-    display: none;
   }
 
   .search-engine {

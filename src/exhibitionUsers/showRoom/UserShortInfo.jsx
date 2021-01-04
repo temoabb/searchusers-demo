@@ -1,6 +1,6 @@
 import React from 'react'
-import GetReposNames from './GetReposNames'
-import RealName from './GetRealName'
+import GetReposNames from './GetReposNames.jsx'
+import RealName from './GetRealName.jsx'
 import './PigmentUsers.css'
 
 

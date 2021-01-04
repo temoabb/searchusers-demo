@@ -1,10 +1,8 @@
 import React from 'react'
+import Button from '../button/Button.jsx'
 import './Home.css'
-
 import logo from '../assets/octocat.png'
-// import socialite from '../assets/socialite.png'
 
-import Button from '../button/Button'
 
 const Home = () => {
 

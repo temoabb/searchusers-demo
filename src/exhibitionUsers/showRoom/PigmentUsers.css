@@ -1,5 +1,5 @@
 
-/* how many users are in received LIST / GRID */
+/* how many users are in received data */
 .amount {
   padding: 10px 0 10px 5px;
   font-size: 20px;
@@ -85,7 +85,6 @@
 
 .inforow .name-cell a:hover {
   color: #16b93a;
-  border-bottom: 1px solid  #16b93a;
 }
 
 .inforow .repo-cell {

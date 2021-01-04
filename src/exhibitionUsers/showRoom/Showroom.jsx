@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import ActionsPanel from './actionsPanel/ActionsPanel'
-import UsersDisplay from './showRoom/UsersDisplay'
-
-// import gridOn from '../assets/grid_on.svg'
-// import gridOff from '../assets/grid_off.svg'
+import ActionsPanel from '../actionsPanel/ActionsPanel.jsx'
+import UsersDisplay from './UsersDisplay.jsx'
 
 
 const Showroom = () => {

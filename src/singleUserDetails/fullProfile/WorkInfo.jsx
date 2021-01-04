@@ -1,6 +1,6 @@
 import React from 'react'
-import GetReposNames from '../../exhibitionUsers/showRoom/GetReposNames'
-import GetOrganizationName from './GetOrganizationName'
+import GetReposNames from '../../exhibitionUsers/showRoom/GetReposNames.jsx'
+import GetOrganizationName from './GetOrganizationName.jsx'
 
 const WorkInfo = ({ login, followers, public_repos }) => {
   return (

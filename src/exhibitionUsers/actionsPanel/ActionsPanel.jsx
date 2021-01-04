@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../../button/Button'
+import Button from '../../button/Button.jsx'
 import logo from '../../assets/group-users.svg'
 
 import './ActionsPanel.css'
