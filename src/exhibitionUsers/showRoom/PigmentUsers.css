@@ -1,15 +1,5 @@
-.flex {
-  display: flex;
-}
 
-.align-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
+/* how many users are in received LIST / GRID */
 .amount {
   padding: 10px 0 10px 5px;
   font-size: 20px;
@@ -20,6 +10,12 @@
   padding-left: 10px;
 }
 
+
+
+/* ======================== userinfo when we're in LIST MODE: ================================================== */
+
+
+/*  ----- green flat on LIST VIEW ------ */
 
 .flat {
   width: 100%;
@@ -49,13 +45,9 @@
   justify-content: flex-start;
 }
 
-.hideflat {
-  display: none;
-}
 
+ /* USERS' LIST */
 
-/* ======================== userinfo when we're in LIST MODE: ================================================== */
- 
 .listroom {
   display: flex;
   flex-direction: column;
@@ -69,7 +61,6 @@
 
 .inforow div {
   width: 25%;
-  /* border-right:  1px solid gainsboro; */
   border-bottom:  1px solid gainsboro;
   padding-left: 10px;
   display: flex;
@@ -80,6 +71,11 @@
 .inforow .avatar-cell img {
   width: 60px;
   height: 60px;
+  border-radius: 2px;
+}
+
+.inforow .type-cell {
+  color: rgb(136, 106, 106);
 }
 
 .inforow .name-cell a {
@@ -105,8 +101,12 @@
 }
 
 
-
 /* ======================== userinfo when we're in >>>>> GRID <<<<<< mode: ================================================== */
+
+.hideflat {
+  display: none;
+}
+
 
 .gridroom {
   display: flex;
@@ -189,7 +189,7 @@
 
   /* LIST */
 
-/* -------------- green flat ---------------- */
+/* ----- green flat ----------- */
 
   .flat {
     font-size: 12px;
@@ -315,9 +315,9 @@
     font-size: 16px;
   }
 
-  /* LIST */
+/* LIST */
 
-/* -------------- green flat ---------------- */
+/* -------- green flat ------- */
 
   .flat {
     font-size: 12px;
@@ -350,10 +350,10 @@
 
 
 
-/* ----------------------- inforow  ----------------------- */
+/* -------------- inforow  -------- */
+
   .inforow div {
     padding: 0;
-    /* font-family: 'Quicksand', sans-serif; */
   }
 
 /* type  */
@@ -363,13 +363,11 @@
     color: gray;
   }
 
-
 /* name */
   .inforow .name-cell {
     width: 20%;
     font-size: 11px;
   }
-
 
 /* avatar */
   .inforow .avatar-cell {
@@ -382,7 +380,6 @@
     height: auto;
     border-radius: 2px;
   }
-
 
   /*  repos  */
   .inforow .repo-cell {
@@ -397,7 +394,6 @@
     color: seagreen;
     font-size: 8px;
   }
-
 
 
    /* GRID */

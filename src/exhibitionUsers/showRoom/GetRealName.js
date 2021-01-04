@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import './List.css'
+import './PigmentUsers.css'
+
 
 const RealName = ({ userName }) => {
 

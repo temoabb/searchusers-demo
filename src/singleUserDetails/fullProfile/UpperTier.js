@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Main = ({ avatar_url, userGitHubURL, type, twitter_username, name, location }) => {
+const UpperTier = ({ avatar_url, userGitHubURL, type, twitter_username, name, location }) => {
   return (
-    <div className="main">
+    <div className="upperTier">
       <div className="avatarDiv">
         <img src={avatar_url} alt="avatar" />
       </div>
@@ -17,4 +17,4 @@ const Main = ({ avatar_url, userGitHubURL, type, twitter_username, name, locatio
 }
 
 
-export default Main
+export default UpperTier

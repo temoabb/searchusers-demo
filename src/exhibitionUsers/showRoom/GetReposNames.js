@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import './List.css'
+import './PigmentUsers.css'
 
 const GetReposNames = ({ userName }) => {
 

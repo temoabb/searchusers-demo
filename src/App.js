@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Home from './home/Home'
 import UserInDetails from './singleUserDetails/UserInDetails'
-import Showroom from './views/Showroom'
+import Showroom from './exhibitionUsers/Showroom'
 import './App.css';
 
 

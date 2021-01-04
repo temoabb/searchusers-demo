@@ -10,6 +10,9 @@
   background:  #493072;
 }
 
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>  When we've got the DATA  <<<<<<<<<<<<<<<<<<<<<  */
+
 .gotData {
   width: 60%;
   display: flex;
@@ -18,11 +21,10 @@
   color: lightyellow; 
 }
 
-.main,
+.upperTier,
 .workInfo {
   background: #302C5D;
 }
-
 
 .gotData .noUser {
   display: none;
@@ -32,10 +34,7 @@
   margin: 20px;
 }
 
-
-
-
-.main {
+.upperTier {
   width: 100%;
   height: 200px;
   display: flex;
@@ -46,14 +45,12 @@
   font-size: 18px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  /* font-family: 'Spectral', serif; */
 }
 
 .avatarDiv {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  /* width: 20%; */
   height: 100%;
   padding: 5px 10px;
 }
@@ -63,7 +60,6 @@
   height: auto;
   border-radius: 3px;
 }
-
 
 .personal {
   display: flex;
@@ -101,7 +97,6 @@
   display: flex;
 }
 
-
 .specifics {
   width: 50%;
   border-right: 1px solid #493072;
@@ -112,7 +107,6 @@
   color: lightgreen;
   font-size: 20px;
   font-weight: 300;
-
 }
 
 .findings {
@@ -122,34 +116,9 @@
   border-bottom: 1px solid #493072;
 }
 
-/* >>>>>>>>>>>> When we DIDN'T receiva data <<<<<<<<<<<<<<<<< */
 
+/* ================ REPOS =============== */
 
-.noData > div {
-  display: none;
-}
-
-.noData {
-  border-radius: 5px;
-  background: brown;
-  padding: 20px;
-}
-
-.noData .noUser {
-  margin: 20px;
-  color: #fff;
-}
-
-.noData .backToUsers a {
-  color: lightgrey;
-}
-
-.noData .backToUsers a:hover {
-  color: #fff;
-}
-
-
-/* ======================= REPOS ====================== */
 .workInfo .repo-cell {
   display: flex;
   width: 50%;
@@ -166,7 +135,7 @@
 }
 
 
-/* ====================== ORGANIZATION ===================== */
+/* ============= ORGANIZATION ============ */
 .organization-cell {
   display: flex;
   align-items: center;
@@ -196,7 +165,39 @@
 }
 
 
-/* ====================== Back to most active users room ==================== */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>   When we DIDN'T receive the data   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.noData > div {
+  display: none;
+}
+
+.noData {
+  border-radius: 5px;
+  background: brown;
+  padding: 20px;
+}
+
+.noData .noUser {
+  margin: 20px;
+  color: #fff;
+}
+
+.noData .backToUsers a {
+  color: rgb(201, 182, 182);
+  border-bottom: 1px solid rgb(201, 182, 182);
+}
+
+.noData .backToUsers a:hover {
+  color: #fff;
+  border-bottom: 1px solid lightgray;
+}
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Back to most active users room <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
 .backToUsers a {
   color: lightgreen;
   border-bottom: 1px solid lightgreen;
@@ -204,13 +205,14 @@
 
 .backToUsers a:hover {
   color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
 
 
 
-/* >>>>>>>>>>>>>>>>>>>>>> RESPONSIVE <<<<<<<<<<<<<<<<<<<< */
 
+/* >>>>>>>>>>>>>>>>>>>>>> RESPONSIVE <<<<<<<<<<<<<<<<<<<< */
 
 @media only screen and (max-width: 540px) {
   .gotData {
@@ -218,7 +220,10 @@
   }
 }
 
+
+
 @media only screen and (max-width: 414px) {
+
   .figuresContainer {
     background: #302C5D;
   }
@@ -226,7 +231,6 @@
   .gotData {
     width: 100%;
   }
-
 
   .personal a {
     height: 30px;
@@ -256,11 +260,10 @@
   .workInfo .repo-cell p {
     padding: 2px 0;
   }
-
-
 }
 
 @media only screen and (max-width: 320px) {
+
   .personal a {
     height: 30px;
     color: lightgreen;
@@ -275,7 +278,6 @@
   .specifics {
     font-size: 11px;
   }
-
 
   .organization a {
     color: lightgreen;

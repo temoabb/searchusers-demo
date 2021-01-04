@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Main from './Main'
+import UpperTier from './UpperTier'
 import WorkInfo from './WorkInfo'
 
 import './FullProfile.css'
@@ -14,7 +14,7 @@ const FullProfile = ({ className, login, avatar_url, type, name, location, twitt
   return (
     <div className={className}>
       <h1 className="noUser">USER NOT FOUND!</h1>
-      <Main
+      <UpperTier
         avatar_url={avatar_url}
         userGitHubURL={userGitHubURL}
         name={name}

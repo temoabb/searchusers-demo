@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Flat = ({ className }) => {
+const GreenFlat = ({ className }) => {
   return (
     <div className={className}>
       <div className="flat-first">AVATAR</div>
@@ -13,4 +13,4 @@ const Flat = ({ className }) => {
 
 
 
-export default Flat
+export default GreenFlat

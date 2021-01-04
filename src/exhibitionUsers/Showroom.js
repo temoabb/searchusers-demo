@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-
 import ActionsPanel from './actionsPanel/ActionsPanel'
 import UsersDisplay from './showRoom/UsersDisplay'
 
-import gridOn from '../assets/grid_on.svg'
-import gridOff from '../assets/grid_off.svg'
+// import gridOn from '../assets/grid_on.svg'
+// import gridOff from '../assets/grid_off.svg'
+
 
 const Showroom = () => {
+
   const [data, setData] = useState([])
   const [roomstyle, setRoomStyle] = useState('listroom')
   const [showflat, setShowFlat] = useState('flat')
@@ -15,8 +16,10 @@ const Showroom = () => {
   const [value, setValue] = useState("")
   const [disableSearch, setDisableSearch] = useState(true)
 
+
   useEffect(() => {
-    console.log("effect")
+    // console.log("effect")
+
     axios
       .get("https://api.github.com/users")
       .then(response => {
@@ -25,28 +28,31 @@ const Showroom = () => {
       })
   }, [])
 
+
   const handleInputValueChange = (e) => {
     setValue(e.target.value)
     setDisableSearch(false)
   }
 
+
   const handleStateChecker = () => {
     if (value) {
-      console.log('value exists', value)
+      // console.log('value exists', value)
       setDisableSearch(true)
       setValue("")
     } else {
-      console.log('value does not exist', value)
+      // console.log('value does not exist', value)
       setDisableSearch(true)
-
     }
   }
+
 
   const toggleHandler = () => {
     roomstyle === 'listroom' ? setRoomStyle('gridroom') : setRoomStyle('listroom')
     showflat === 'flat' ? setShowFlat('hideflat') : setShowFlat('flat')
     formation === 'inforow' ? setFormation('infocard') : setFormation('inforow')
   }
+
 
   return (
     <div>
@@ -56,7 +62,7 @@ const Showroom = () => {
           handleInputValueChange={handleInputValueChange}
           nextCondition="GRID"
           toggleHandler={toggleHandler}
-          exteriorIcon={gridOn}
+          // exteriorIcon={gridOn}
           amount={data.length}
           isDisabled={disableSearch}
           onClick={handleStateChecker}
@@ -68,11 +74,12 @@ const Showroom = () => {
           handleInputValueChange={handleInputValueChange}
           nextCondition="LIST"
           toggleHandler={toggleHandler}
-          exteriorIcon={gridOff}
+          // exteriorIcon={gridOff}
           amount={data.length}
           isDisabled={disableSearch}
           onClick={handleStateChecker}
         />}
+
       <div>
         <UsersDisplay
           data={data}
