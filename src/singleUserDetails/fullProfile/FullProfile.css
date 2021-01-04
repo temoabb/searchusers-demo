@@ -10,7 +10,6 @@
   background:  #493072;
 }
 
-
 .gotData {
   width: 60%;
   display: flex;
@@ -18,7 +17,6 @@
   padding: 10px 0;
   color: lightyellow; 
 }
-
 
 .main,
 .workInfo {
@@ -35,28 +33,7 @@
 }
 
 
-.noData > div {
-  display: none;
-}
 
-.noData {
-  border-radius: 5px;
-  background: brown;
-  padding: 20px;
-}
-
-.noData .noUser {
-  margin: 20px;
-  color: #fff;
-}
-
-.noData .backToUsers a {
-  color: lightgrey;
-}
-
-.noData .backToUsers a:hover {
-  color: #fff;
-}
 
 .main {
   width: 100%;
@@ -69,6 +46,7 @@
   font-size: 18px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  /* font-family: 'Spectral', serif; */
 }
 
 .avatarDiv {
@@ -100,7 +78,6 @@
   color: lightgreen;
   font-size: 22px;
   font-weight: bolder;
-  /* border-bottom: 1px solid lightgreen; */
 }
 .personal a:hover {
   border-bottom: 1px solid #fff;
@@ -134,7 +111,6 @@
   padding: 10px;
   color: lightgreen;
   font-size: 20px;
-  /* letter-spacing: 0.5px; */
   font-weight: 300;
 
 }
@@ -144,6 +120,32 @@
   padding: 10px;
   display: flex;
   border-bottom: 1px solid #493072;
+}
+
+/* >>>>>>>>>>>> When we DIDN'T receiva data <<<<<<<<<<<<<<<<< */
+
+
+.noData > div {
+  display: none;
+}
+
+.noData {
+  border-radius: 5px;
+  background: brown;
+  padding: 20px;
+}
+
+.noData .noUser {
+  margin: 20px;
+  color: #fff;
+}
+
+.noData .backToUsers a {
+  color: lightgrey;
+}
+
+.noData .backToUsers a:hover {
+  color: #fff;
 }
 
 
@@ -202,4 +204,82 @@
 
 .backToUsers a:hover {
   color: #fff;
+}
+
+
+
+
+/* >>>>>>>>>>>>>>>>>>>>>> RESPONSIVE <<<<<<<<<<<<<<<<<<<< */
+
+
+@media only screen and (max-width: 540px) {
+  .gotData {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .figuresContainer {
+    background: #302C5D;
+  }
+
+  .gotData {
+    width: 100%;
+  }
+
+
+  .personal a {
+    height: 30px;
+    color: lightgreen;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  .personal p {
+    font-size: 12px;
+  }
+  
+  .specifics {
+    font-size: 12px;
+    width: 40%;
+  }
+
+  .findings {
+    width: 60%;
+  }
+  .workInfo .repo-cell {
+    width: 60%;
+    padding: 10px 5px;
+    font-size: 11px;
+  }
+  
+  .workInfo .repo-cell p {
+    padding: 2px 0;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+  .personal a {
+    height: 30px;
+    color: lightgreen;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  .personal p {
+    font-size: 12px;
+  }
+
+  .specifics {
+    font-size: 11px;
+  }
+
+
+  .organization a {
+    color: lightgreen;
+    font-size: 16px;
+    margin: 0 10px;
+  }
 }

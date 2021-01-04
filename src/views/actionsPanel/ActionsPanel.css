@@ -13,9 +13,9 @@
   color: #fff;
   border-bottom: 1px solid #493072;
 }
+
 .panel .toggler {
   font-family: 'Spectral', serif;
-
 }
 
 .amount {
@@ -131,8 +131,6 @@
 @media only screen and (max-width: 414px) {
   .panel {
     flex-direction: column;
-
-  
   }
 
   .toggler {

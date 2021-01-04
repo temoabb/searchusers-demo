@@ -14,11 +14,11 @@
   letter-spacing: 0.2px;
 }
 
-
 .button:hover {
   background: #493072;
   color: lightgrey;
 }
+
 
 
 @media only screen and (max-width: 320px) {
@@ -28,7 +28,6 @@
     padding: 15px;
     font-weight: 600;
   }
-
 }
 
 
